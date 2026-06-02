@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lupus Prediction</title>
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="main-container">
+
+    <div class="card large-card">
+
+        <h1>Lupus Prediction Form</h1>
+        <p class="subtitle">
+            Enter patient details
+        </p>
+
+        <form action="/predict" method="POST">
+
+    <input type="number" name="Age" placeholder="Age" required>
+
+    <input type="number" name="Gender" placeholder="Gender (0/1)" required>
+
+    <input type="number" step="any" name="Sickness" placeholder="Sickness Time Duration" required>
+
+    <input type="number" step="any" name="Esbach" placeholder="Esbach" required>
+
+    <input type="number" step="any" name="MBL" placeholder="MBL Level" required>
+
+    <input type="number" step="any" name="ESR" placeholder="ESR" required>
+
+    <input type="number" step="any" name="C3" placeholder="C3" required>
+
+    <input type="number" step="any" name="C4" placeholder="C4" required>
+
+    <input type="number" step="any" name="CRP" placeholder="CRP" required>
+
+    <input type="number" step="any" name="ANA" placeholder="ANA" required>
+
+    <input type="number" step="any" name="ANTIdsDNA" placeholder="ANTIdsDNA" required>
+
+    <input type="number" step="any" name="SLEDAI" placeholder="SLE-DAI" required>
+
+    <button type="submit">
+        Predict Lupus
+    </button>
+
+</form>
+
+    </div>
+
+</div>
+
+</body>
+</html>
+```
